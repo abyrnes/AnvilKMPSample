@@ -1,0 +1,18 @@
+plugins {
+  id 'org.jetbrains.kotlin.multiplatform'
+  id 'com.squareup.anvil'
+}
+
+kotlin {
+  jvm {
+    withJava()
+  }
+  ios()
+
+  sourceSets {
+    commonMain {
+      dependencies {
+      }
+    }
+  }
+}
