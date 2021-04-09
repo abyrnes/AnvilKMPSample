@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="android-module-jvm">
-    <output-path>$PROJECT_DIR$/android-module/build/libs</output-path>
-    <root id="archive" name="android-module-jvm.jar" />
-  </artifact>
-</component>
