@@ -1,0 +1,29 @@
+plugins {
+  id 'org.jetbrains.kotlin.multiplatform'
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.kapt'
+  id 'com.squareup.anvil'
+}
+
+kotlin {
+  android()
+  ios()
+
+  sourceSets {
+    commonMain {
+      dependencies {
+        api project(':common')
+      }
+    }
+
+    androidMain {
+      dependencies {
+        implementation('com.google.dagger:dagger:2.33')
+      }
+    }
+  }
+}
+
+dependencies {
+  kapt('com.google.dagger:dagger-compiler:2.33')
+}

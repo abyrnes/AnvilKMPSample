@@ -1,3 +1,5 @@
 rootProject.name = "Anvil KMP Sample"
 include ':app'
-include ':module'
+include ':android-module'
+include ':common'
+include ':jvm-module'
